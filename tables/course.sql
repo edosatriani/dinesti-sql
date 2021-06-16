@@ -2,7 +2,6 @@ CREATE TABLE `course` (
   `uuid` varchar(32) NOT NULL DEFAULT uuid(),
   `autonumber` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
-  `grade_id` int(11) NOT NULL,
   `code` varchar(10) NOT NULL,
   `description` varchar(50) NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT 0,
