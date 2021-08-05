@@ -1,7 +1,10 @@
 CREATE TABLE `course_payment` (
   `uuid` varchar(32) NOT NULL DEFAULT uuid(),
   `autonumber` int(11) NOT NULL,
-  `code` varchar(10) NOT NULL,
+  `trans_no` varchar(50) NOT NULL,
+  `trans_date` varchar(50) NOT NULL,
+  `student_id` int(11) NOT NULL,
+  `pay_amount` int(11) NOT NULL,
   `description` varchar(50) NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT 0,
   `created_by` varchar(50) NOT NULL,
