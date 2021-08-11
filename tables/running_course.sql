@@ -2,7 +2,7 @@ CREATE TABLE `running_course` (
   `uuid` varchar(32) NOT NULL DEFAULT uuid(),
   `autonumber` int(11) NOT NULL,
   `no_running_course` varchar(11) NOT NULL,
-  `date` date NOT NULL,
+  `date` varchar(11) NOT NULL,
   `student_id` tinyint(2) NOT NULL,
   `teacher_id` tinyint(2) NOT NULL,
   `materi` varchar(100) NOT NULL,
