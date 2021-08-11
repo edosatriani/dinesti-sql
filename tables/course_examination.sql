@@ -1,8 +1,8 @@
 CREATE TABLE `course_examination` (
   `uuid` varchar(32) NOT NULL DEFAULT uuid(),
   `autonumber` int(11) NOT NULL,
-  `course_examination_no` varchar(10) NOT NULL,
-  `date` datetime NOT NULL,
+  `trans_no` varchar(10) NOT NULL,
+  `trans_date` datetime NOT NULL,
   `teacher_id` int(11) NOT NULL,
   `course_id` int(11) NOT NULL,
   `grade_id` int(11) NOT NULL,
