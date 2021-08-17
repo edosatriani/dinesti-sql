@@ -3,10 +3,10 @@ CREATE TABLE `running_course` (
   `autonumber` int(11) NOT NULL,
   `trans_no` varchar(11) NOT NULL,
   `trans_date` varchar(11) NOT NULL,
+  `schedule_id` tinyint(2) NOT NULL,
   `student_id` tinyint(2) NOT NULL,
   `teacher_id` tinyint(2) NOT NULL,
   `given_lesson` varchar(100) NOT NULL,
-  `status` tinyint(1) NOT NULL DEFAULT 0,
   `created_by` varchar(50) NOT NULL,
   `created_ts` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_by` varchar(50) NOT NULL,
@@ -18,3 +18,4 @@ ALTER TABLE `running_course`
 
 ALTER TABLE `running_course`
   MODIFY `autonumber` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+ 
