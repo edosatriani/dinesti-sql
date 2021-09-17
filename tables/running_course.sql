@@ -7,6 +7,7 @@ CREATE TABLE `running_course` (
   `student_id` tinyint(2) NOT NULL,
   `teacher_id` tinyint(2) NOT NULL,
   `given_lesson` varchar(100) NOT NULL,
+  `is_concert` tinyint(1) NOT NULL NULL DEFAULT 0,
   `status` tinyint(1) NOT NULL DEFAULT 1,
   `created_by` varchar(50) NOT NULL,
   `created_ts` timestamp NOT NULL DEFAULT current_timestamp(),
