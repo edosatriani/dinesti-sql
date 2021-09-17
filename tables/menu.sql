@@ -2,7 +2,7 @@ CREATE TABLE `menu` (
   `uuid` varchar(32) NOT NULL DEFAULT uuid(),
   `autonumber` int(11) NOT NULL,
   `module` varchar(100) NOT NULL,
-  `rute` varchar(100) NOT NULL,
+  `route` varchar(100) NOT NULL,
   `description` varchar(20) NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT 0,
   `created_by` varchar(50) NOT NULL,
